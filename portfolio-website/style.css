@@ -1,0 +1,232 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #fbeec1b4;
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header div {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headerLogo {
+    flex: 1;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.selected {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.main {
+    width: 100%;
+    background-color: #fbeec1;
+    padding-top: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mainHeading {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+}
+
+.mainContent {
+    padding-top: 22px;
+    font-size: 19px;
+    max-width: 500px;
+    padding-bottom: 22px;
+}
+
+.hand {
+    display: inline-block;
+    animation: wiggle 0.4s infinite;
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(7deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-7deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+button {
+    margin: 5px;
+    height: 48px;
+    width: 150px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #659DBD;
+    border: 2px solid #659DBD;
+    text-transform: uppercase;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.sqbtn {
+    width: 48px;
+}
+
+.skills {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.skillsContent {
+    font-family: 'Raleway';
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.skillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:auto;
+    max-width: 900px;
+}
+
+.progress {
+    width: 300px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+.progressBar {
+    width: 70%;
+    background-color: gold;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.liveActivityFlex {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+
+.miniActivity {
+
+    width: 200px;
+    border-top: 5px solid rgb(209, 59, 59);
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.384);
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.384);
+    -moz-box-shadow:  0px 0px 6px -1px rgba(0, 0, 0, 0.384);
+    padding: 10px;
+    padding-bottom: 25px;
+    font-family: 'Raleway';
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.miniActivityStats {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: rgb(94, 94, 94);
+}
+
+.projectFlex {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    text-align: left;
+}
+
+.project {
+    width: 400px;
+    margin: 15px;
+}
+
+.myimg {
+    border-radius: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.projectText {
+    display: inline-block;
+    text-align: justify;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: rgb(82, 82, 82);
+    font-size: 14px;
+}
+
+.innerProject {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.projectTitle {
+    flex:1;
+    font-weight: bold;
+}
+
+.date {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 12px;
+    color: rgb(128, 128, 128);
+}
+
+.techStack {
+    display: flex;
+}
+
+.stack {
+    padding: 3px;
+    min-width: 90px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: rgb(51, 51, 51);
+    margin: 5px;
+    font-size: 12px;
+
+}
