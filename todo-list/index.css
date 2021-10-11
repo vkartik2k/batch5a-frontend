@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: mediumseagreen;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+input {
+    width: 68%;
+    margin-right: 2%;
+}
+
+button {
+    min-width: 30%;
+}
+
+.inputContainer{
+    padding: 5px;
+}
+
+.taskContainer {
+    padding: 5px;
+    padding-top: 0px;
+}
+
+.taskDes {
+    display: inline-block;
+    width: 70%;
+}
+
+.task {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
