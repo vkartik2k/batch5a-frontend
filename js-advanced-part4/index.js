@@ -47,10 +47,80 @@ console.log("Advanced JS Part - 4")
 
 // console.log(c)
 
+// let arr = [1,2,3]
+
+// let cpy = [...arr, 4]
+
+// cpy = [1,2,3,4]
+
+// function add(...arr) {
+//     arr = [1,2 ,3]
+// }
+
+// add(1, 2, 3)
+
+
+// let arr = [
+//     4,
+// ]
+
+// arr.reduce((acc, ele) => { return acc+ele}, 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // JS is a synchronous and single threaded language
 
+
+// console.log(10)
+
+// setTimeout(() => {
+//     console.log(20)
+// }, 1000)
+
+//  // x sec
+
+// console.log(30)
+
+// // async task in js 
+// 1. setTimeout(() => {
+    
+// }, timeout);
+// 2. promises
+// 3. async await
+// 4. fetch
+
+
+// add(1, 2)
+
 // callbacks in js
+
+setTimeout(() => {
+    console.log(10)
+}, 1000);
 
 // scope in js
 
 // closure in js
+function outer(f) {
+    console.log(1);
+    f(10);
+    console.log(2);
+}
+
+let inner = function (a) {
+    console.log(a);
+}
+
+outer(inner)
