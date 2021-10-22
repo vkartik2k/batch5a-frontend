@@ -23,18 +23,18 @@ console.log("Advanced JS Part - 2")
 
 // Call, Apply and bind
 
-// var person = {
-//     firstName: "Harry",
-//     lastName: "Potter",
-//     greet: function (location, house) {
-//         console.log(`Hello and welcome ${this.firstName} ${this.lastName} from ${location} and house ${house}`)
-//     }
-// }
+var person = {
+    firstName: "Harry",
+    lastName: "Potter",
+    greet: function (location, house) {
+        console.log(`Hello and welcome ${this.firstName} ${this.lastName} from ${location} and house ${house}`)
+    }
+}
 
-// var person2 = {
-//     firstName: 'Ron',
-//     lastName: 'Weasly',
-// }
+var person2 = {
+    firstName: 'Ron',
+    lastName: 'Weasly',
+}
 
 // var person3 = {
 //     firstName: 'Darco',
@@ -42,7 +42,7 @@ console.log("Advanced JS Part - 2")
 // }
 
 // person.greet.apply(person3, ['paris', 'A'])
-// person.greet.call(person3, 'paris', 'A')
+person.greet.call(person3, 'paris', 'A')
 
 
 // person.greet('london', 'A')

@@ -15,23 +15,110 @@ console.log("Advanced JS Part - 7")
 //     }
 // })
 
+// let myPromise = new Promise(function (resolve, reject) {
+//     // ...
+
+
+//     let price = 1999
+
+//     if(price < 1000) {
+//         resolve(price) // fullfilled
+//     }
+//     else {
+//         reject("Error") // not fullfilled
+//     }
+    
+// })
+
+// myPromise.then(function (data) {
+//     console.log("Promise is fullfilled!")
+//     console.log(`Book Purchased for ${data}`)
+// }).catch(function(err) {
+//     console.log(err)
+// })
+
+
 // async and await
 
 // function makeRequest(location) {
 //     return new Promise((resolve, reject) => {
 //         console.log(`Making Request to ${location}`);
-//         if(location==='google') {
-//             resolve("Google says Hello");
-//         }
-//         else {
-//             reject("We can only connect to google");
-//         }
+//         setTimeout(() => {
+//             if(location==='google') {
+//                 resolve("Google says Hello");
+//             }
+//             else {
+//                 reject("We can only connect to google");
+//             }
+//         }, 15000)
+
 //     })
 // }
 
-// function processRequest(response) {
+// function processResponse(response) {
 //     return new Promise((resolve, reject) => {
 //         console.log("Processing Response");
 //         resolve("Extra Info :" + response)
+//         // reject("Error")
 //     })
 // }
+
+// // makeRequest('google').then(function (res) {
+// //     return processResponse(res);
+// // }).then(function(pres) {
+// //     console.log(pres)
+// // }).catch(function(err) {
+// //     console.error(err)
+// // });
+// // console.log("Hello")
+
+// // async await
+// async function exec() {
+//     try {
+//         let myans = await makeRequest('google') // 15 sec
+
+//         let processedAns = await processResponse(myans) // 15 sec
+//         console.log(processedAns)
+        
+//     }
+//     catch(e) {
+//         console.log("Received an Error in connecting")
+//     }
+//     console.log("Hello")
+// }
+
+// exec() // async
+// console.log("Hello2")
+
+
+
+// makeRequest('facebook').then(function (myRes) {
+//     console.log(myRes)
+// }).catch(function (myRes) {
+//     console.log(myRes)
+// })
+// console.log("Hello")
+
+// console.log(1)
+
+// setTimeout(()=> {
+//     console.log(2)
+// }, 1000)
+
+// console.log(3)
+
+// function mul(a, b) {
+//     return a*b;
+// }
+
+// add(mul(1,2), 3) //6
+
+
+// fetch
+fetch('https://reqres.in/api/users?page=2')
+  .then(function(res) {
+      return res.json();
+  })
+  .then(function(res) {
+      console.log(res.data)
+  })
