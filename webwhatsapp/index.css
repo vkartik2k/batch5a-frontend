@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+
+#leftContainer {
+    min-width: 300px;
+    height: 100vh;
+    overflow: auto;
+}
+
+#rightContainer {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#leftHeader {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: rgb(236, 236, 236);
+    border-right: rgb(221, 221, 221) 1px solid;
+}
+
+#profilePic {
+    border-radius: 20px;
+}
+
+#rightHeader {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+}
+
+#personName {
+    padding-left: 10px;
+    flex: 1;
+}
+
+.personChat {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 0.5px solid rgb(221, 221, 221);
+}
+
+.chatName {
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.chatTime {
+    color: rgb(156, 156, 156);
+    font-size: 12px;
+}
+
+.chatMessage {
+    color: rgb(66, 66, 66);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.selectedChat {
+    background-color: rgb(209, 209, 209);
+}
+
+#peopleContainer {
+    overflow: auto;
+}
+
+#main {
+    background-image: url("back.png.crdownload");
+    flex:1;
+    padding: 8px;
+}
+
+#inputMsg {
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    padding: 3px;
+    align-items: center;
+
+}
+
+#msgContainer {
+    flex:1;
+}
+
+#msg {
+    height: 32px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0px solid black;
+}
+
+.icon {
+    padding: 4px;
+}
+
+.msgBox {
+    padding: 3px;
+}
+
+.receivedMsg {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.sendMsg {
+    display: inline-block;
+    background-color: rgb(232, 255, 197);
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.msgBox2 {
+    text-align: right;
+}
