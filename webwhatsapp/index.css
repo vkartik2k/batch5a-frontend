@@ -90,7 +90,7 @@ html, body {
 }
 
 #main {
-    background-image: url("back.png.crdownload");
+    background-image: url("back.png");
     flex:1;
     padding: 8px;
 }

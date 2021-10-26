@@ -115,10 +115,49 @@ console.log("Advanced JS Part - 7")
 
 
 // fetch
-fetch('https://reqres.in/api/users?page=2')
+// fetch('https://reqres.in/api/users?page=2')
+//   .then(function(res) {
+//       return res.json();
+//   })
+//   .then(function(res) {
+//       console.log(res.data)
+//   })
+
+document.getElementById('sd').value
+
+fetch(`https://codeforces.com/api/user.info?handles=${username}`, {})
   .then(function(res) {
       return res.json();
   })
   .then(function(res) {
-      console.log(res.data)
+      console.log(res.result[0].rating)
   })
+
+
+// POST
+
+let obj = {
+    name: "Harry",
+    email: "harry@potter.com",
+    password: "school@123"
+}
+
+let username= "Kartik"
+
+fetch('https://example.com/profile' + username, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(obj),
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data);
+})
+
+console.log( JSON.stringify(obj))
+
+
+
+
