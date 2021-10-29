@@ -131,6 +131,7 @@ fetch(`https://codeforces.com/api/user.info?handles=${username}`, {})
   })
   .then(function(res) {
       console.log(res.result[0].rating)
+      document.getElementById('rating').innerText = res.result[0].rating
   })
 
 

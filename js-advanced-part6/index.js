@@ -52,7 +52,7 @@ let greetObj = greet.bind(obj, 'London')
 
 // greetObj(14)
 
-Function.prototype.myBind = function (...args) {
+Object.prototype.myBind = function (...args) {
     let obj = this //referring to greet
     let params = args.slice(1)
     return function(...args2) {
